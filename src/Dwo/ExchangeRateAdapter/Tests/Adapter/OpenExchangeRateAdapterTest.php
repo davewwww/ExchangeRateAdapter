@@ -26,7 +26,9 @@ class OpenExchangeRateAdapterTest extends \PHPUnit_Framework_TestCase
     {
         $this->client->expects(self::once())
             ->method('get')
-            ->willReturn(new Response(200, json_encode(['rates' => ['EUR' => 0.88, 'USD' => 1, 'CHF' => 0.96]])));
+            ->willReturn(new Response(200, json_encode(
+                array('rates' => array('EUR' => 0.88, 'USD' => 1, 'CHF' => 0.96))
+            )));
 
         $adapter = new OpenExchangeRateAdapter('foo', $this->client);
         $rates = $adapter->getAll();
