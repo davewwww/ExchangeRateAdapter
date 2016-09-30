@@ -1,0 +1,38 @@
+{
+  "name": "dwo/exchange_rate_adapter",
+  "description": "grep foreign exchange reference rates from the ecb and openexchangerates.org",
+  "keywords": [
+    "euro",
+    "dollar",
+    "exchange-rate",
+    "exchange",
+    "rates",
+    "convert",
+    "currency",
+    "currencies",
+    "ecb",
+    "openexchangerates"
+  ],
+  "homepage": "https://github.com/davewwww",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dave Www",
+      "email": "davewwwo@gmail.com",
+      "homepage": "https://github.com/davewwww"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "dwo/client": "dev-master"
+  },
+  "autoload": {
+    "psr-0": {"Dwo\\ExchangeRateAdapter": "src/"}
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
